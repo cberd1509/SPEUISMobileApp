@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SPE UIS Mobile</string>
+    <string name="bienvenido">Bienvenido a nuestra \nApp Móvil</string>
+    <string name="tocacontinuar">Toca el siguiente botón y acepta los permisos para poder usar la aplicación</string>
+    <string name="iniciar">¡ Iniciar !</string>
+
 </resources>

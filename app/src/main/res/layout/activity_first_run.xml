@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.speuis.speuismobile.FirstRun">
+    tools:context="org.speuis.speuismobile.FirstRun"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/tvMessage1"
+            android:layout_weight="1.00"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/tvBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="@string/bienvenido"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <TextView
+            android:id="@+id/tvMessage1"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:gravity="center_vertical|center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/tocacontinuar"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="301dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:text="@string/iniciar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+</FrameLayout>
